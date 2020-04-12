@@ -14,6 +14,7 @@
 		45E551702443D2A7007E0232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E5516F2443D2A7007E0232 /* Assets.xcassets */; };
 		45E551732443D2A7007E0232 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E551712443D2A7007E0232 /* LaunchScreen.storyboard */; };
 		45E5517E2443D2A7007E0232 /* TDDPokerByswiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5517D2443D2A7007E0232 /* TDDPokerByswiftTests.swift */; };
+		45E551892443DC8B007E0232 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E551882443DC8B007E0232 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		45E551792443D2A7007E0232 /* TDDPokerByswiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDPokerByswiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E5517D2443D2A7007E0232 /* TDDPokerByswiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDPokerByswiftTests.swift; sourceTree = "<group>"; };
 		45E5517F2443D2A7007E0232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45E551882443DC8B007E0232 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				45E5516F2443D2A7007E0232 /* Assets.xcassets */,
 				45E551712443D2A7007E0232 /* LaunchScreen.storyboard */,
 				45E551742443D2A7007E0232 /* Info.plist */,
+				45E551882443DC8B007E0232 /* Card.swift */,
 			);
 			path = TDDPokerByswift;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				45E5516B2443D2A5007E0232 /* ViewController.swift in Sources */,
 				45E551672443D2A5007E0232 /* AppDelegate.swift in Sources */,
 				45E551692443D2A5007E0232 /* SceneDelegate.swift in Sources */,
+				45E551892443DC8B007E0232 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +375,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nagisa.TDDPokerByswift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -388,7 +392,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nagisa.TDDPokerByswift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

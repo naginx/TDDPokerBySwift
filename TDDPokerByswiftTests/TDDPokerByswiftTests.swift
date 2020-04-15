@@ -77,24 +77,37 @@ class TDDPokerByswiftTests: XCTestCase {
         
     }
     
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    /// 2枚のカードのrankが同じ時、pairの役が成立するか
+    func testIsPair() {
+        var card1: Card
+        var card2: Card
+        var hand: Hand
+        
+        card1 = Card(rank: .king, suit: .spade)
+        card2 = Card(rank: .king, suit: .heart)
+        hand = Hand(cards: [card1, card2])
+        XCTAssertTrue(hand.isPair)
+        
+        card1 = Card(rank: .queen, suit: .spade)
+        card2 = Card(rank: .king, suit: .heart)
+        hand = Hand(cards: [card1, card2])
+        XCTAssertFalse(hand.isPair)
     }
     
+    /// 2枚のカードのsuitが同じ時、Flushの役が成立するか
+    func testIsFlush() {
+        var card1: Card
+        var card2: Card
+        var hand: Hand
+        
+        card1 = Card(rank: .ace, suit: .heart)
+        card2 = Card(rank: .queen, suit: .heart)
+        hand = Hand(cards: [card1, card2])
+        XCTAssertTrue(hand.isFlush)
+        
+        card1 = Card(rank: .ace, suit: .spade)
+        card2 = Card(rank: .queen, suit: .heart)
+        hand = Hand(cards: [card1, card2])
+        XCTAssertFalse(hand.isFlush)
+    }
 }
